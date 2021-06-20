@@ -23,8 +23,6 @@ class PageController extends Controller
 
     public function insertCustomer(Request $request)
     {
-
-
         if ($request->has('insert')) {
             $request->validate([
                 'name' => 'required|string',
